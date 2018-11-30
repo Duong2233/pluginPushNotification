@@ -21,20 +21,26 @@ Pod::Spec.new do |s|
  # s.source_files = 'Pods/*'
    s.subspec 'AWSAuthCore' do |awsauthcore|
    awsauthcore.source_files = 'Pods/AWSAuthCore/AWSAuthSDK/Sources/AWSAuthCore/**/*.{h,m,swift}'
+   awsauthcore.public_header_files = 'Pod/AWSAuthCore/AWSAuthSDK/Sources/AWSAuthCore/**/*.h'
    end
    s.subspec 'AWSCognitoIdentityProvider' do |awscognitoidentityprovider|
    awscognitoidentityprovider.source_files = 'Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/**/*'
+   awscognitoidentityprovider.public_header_files = 'Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/**/*.h'
    end 
    s.subspec 'AWSCognitoIdentityProviderASF' do |aswcognitoidentityproviderasf|
    aswcognitoidentityproviderasf.source_files = 'Pods/AWSCognitoIdentityProviderASF/**/*'
+   aswcognitoidentityproviderasf.public_header_files = 'Pods/AWSCognitoIdentityProviderASF/**/*.h'
    end 
    s.subspec 'AWSCore' do |awscore|
    awscore.source_files = 'Pods/AWSCore/**/*'
+   awscore.public_header_files = 'Pods/AWSCore/**/*.h'
    end 
    s.subspec 'AWSMobileClient' do |awsmobileclient|
    awsmobileclient.source_files = 'Pods/AWSMobileClient/**/*'
+   awsmobileclient.public_header_files = 'Pods/AWSMobileClient/**/*.h'
    end
    s.subspec 'AWSPinpoint' do |awspinpoint|
    awspinpoint.source_files = 'Pods/AWSPinpoint/**/*'
+   awspinpoint.public_header_files = 'Pods/AWSPinpoint/**/*.h'
    end
 end
