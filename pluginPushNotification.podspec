@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
    awscognitoidentityprovider.source_files = 'Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/**/*'
    end 
    s.subspec 'AWSCognitoIdentityProviderASF' do |aswcognitoidentityproviderasf|
-   aswcognitoidentityproviderasf.source_files = 'Pods/AWSCognitoIdentityProviderASF/*'
+   aswcognitoidentityproviderasf.source_files = 'Pods/AWSCognitoIdentityProviderASF/**/*'
    end 
    s.subspec 'AWSCore' do |awscore|
    awscore.source_files = 'Pods/AWSCore/*'
