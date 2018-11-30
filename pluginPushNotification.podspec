@@ -29,12 +29,12 @@ Pod::Spec.new do |s|
    aswcognitoidentityproviderasf.source_files = 'Pods/AWSCognitoIdentityProviderASF/**/*'
    end 
    s.subspec 'AWSCore' do |awscore|
-   awscore.source_files = 'Pods/AWSCore/*'
+   awscore.source_files = 'Pods/AWSCore/**/*'
    end 
    s.subspec 'AWSMobileClient' do |awsmobileclient|
-   awsmobileclient.source_files = 'Pods/AWSMobileClient/*'
+   awsmobileclient.source_files = 'Pods/AWSMobileClient/**/*'
    end
    s.subspec 'AWSPinpoint' do |awspinpoint|
-   awspinpoint.source_files = 'Pods/AWSPinpoint/*'
+   awspinpoint.source_files = 'Pods/AWSPinpoint/**/*'
    end
 end
