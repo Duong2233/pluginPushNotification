@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.exclude_files = "pluginPushNotification/Exclude"
 
 # s.ios.framework = 'AWSAuthCore'	
-  s.source_files = 'Pods/*'
+ # s.source_files = 'Pods/*'
    s.subspec 'AWSAuthCore' do |awsauthcore|
    awsauthcore.source_files = 'Pods/AWSAuthCore/*'
    end
