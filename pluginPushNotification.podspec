@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
    awsauthcore.source_files = 'Pods/AWSAuthCore/AWSAuthSDK/Sources/AWSAuthCore/**/*.{h,m,swift}'
    end
    s.subspec 'AWSCognitoIdentityProvider' do |awscognitoidentityprovider|
-   awscognitoidentityprovider.source_files = 'Pods/AWSCognitoIdentityProvider/*'
+   awscognitoidentityprovider.source_files = 'Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/**/*.{h,m,swift}/{CognitoIdentityProvider,Internal}/**/*.{h,m,swift}/JKBigInteger/**/*.{h,m,swift}/LibTomMath/**/*.{h,m,swift,c}'
    end 
    s.subspec 'AWSCognitoIdentityProviderASF' do |aswcognitoidentityproviderasf|
    aswcognitoidentityproviderasf.source_files = 'Pods/AWSCognitoIdentityProviderASF/*'
