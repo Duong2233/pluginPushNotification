@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 # s.ios.framework = 'AWSAuthCore'	
  # s.source_files = 'Pods/*'
    s.subspec 'AWSAuthCore' do |awsauthcore|
-   awsauthcore.source_files = 'Pods/AWSAuthCore/AWSAuthSDK/Sources/AWSAuthCore/**/*.{h,m,swift}/*'
+   awsauthcore.source_files = 'AWSAuthCore/AWSAuthSDK/Sources/AWSAuthCore/**/*.{h,m,swift}/*'
    end
    s.subspec 'AWSCognitoIdentityProvider' do |awscognitoidentityprovider|
    awscognitoidentityprovider.source_files = 'Pods/AWSCognitoIdentityProvider/*'
