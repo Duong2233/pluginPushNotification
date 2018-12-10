@@ -19,6 +19,9 @@ Pod::Spec.new do |s|
 
 # s.ios.framework = 'AWSAuthCore'	
  # s.source_files = 'Pods/*'
+   s.subspec 'Pods' do |pods|
+   pods.source_files = 'Pods/Target Support Files/**/*'
+   end
    s.subspec 'AWSAuthCore' do |awsauthcore|
    awsauthcore.source_files = 'Pods/AWSAuthCore/AWSAuthSDK/Sources/AWSAuthCore/**/*.{h,m,swift}'
    awsauthcore.public_header_files = 'Pod/AWSAuthCore/AWSAuthSDK/Sources/AWSAuthCore/**/*.h'
