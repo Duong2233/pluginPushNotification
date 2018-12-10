@@ -19,31 +19,43 @@ Pod::Spec.new do |s|
 
 # s.ios.framework = 'AWSAuthCore'	
  # s.source_files = 'Pods/*'
-   s.subspec 'Pods' do |pods|
-   pods.source_files = 'Pods/Target Support Files/**/*'
-   end
+#    s.subspec 'Pods' do |pods|
+#    pods.source_files = 'Pods/Target Support Files/**/*'
+#    end
    s.subspec 'AWSAuthCore' do |awsauthcore|
    awsauthcore.source_files = 'Pods/AWSAuthCore/AWSAuthSDK/Sources/AWSAuthCore/**/*.{h,m,swift}'
    awsauthcore.public_header_files = 'Pod/AWSAuthCore/AWSAuthSDK/Sources/AWSAuthCore/**/*.h'
+        awsauthcore.source_files = 'Pods/Target Support Files/AWSAuthCore/**/*'
+
    end
    s.subspec 'AWSCognitoIdentityProvider' do |awscognitoidentityprovider|
    awscognitoidentityprovider.source_files = 'Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/**/*'
    awscognitoidentityprovider.public_header_files = 'Pods/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider/**/*.h'
+        awscognitoidentityprovider.source_files = 'Pods/Target Support Files/AWSCognitoIdentityProvider/**/*'
+
    end 
    s.subspec 'AWSCognitoIdentityProviderASF' do |aswcognitoidentityproviderasf|
    aswcognitoidentityproviderasf.source_files = 'Pods/AWSCognitoIdentityProviderASF/**/*'
    aswcognitoidentityproviderasf.public_header_files = 'Pods/AWSCognitoIdentityProviderASF/**/*.h'
+        aswcognitoidentityproviderasf.source_files = 'Pods/Target Support Files/AWSCognitoIdentityProviderASF/**/*'
+
    end 
    s.subspec 'AWSCore' do |awscore|
    awscore.source_files = 'Pods/AWSCore/**/*'
    awscore.public_header_files = 'Pods/AWSCore/**/*.h'
+        awscore.source_files = 'Pods/Target Support Files/AWSCore/**/*'
+
    end 
    s.subspec 'AWSMobileClient' do |awsmobileclient|
    awsmobileclient.source_files = 'Pods/AWSMobileClient/**/*'
    awsmobileclient.public_header_files = 'Pods/AWSMobileClient/**/*.h'
+        awsmobileclient.source_files = 'Pods/Target Support Files/AWSMobileClient/**/*'
+
    end
    s.subspec 'AWSPinpoint' do |awspinpoint|
    awspinpoint.source_files = 'Pods/AWSPinpoint/**/*'
    awspinpoint.public_header_files = 'Pods/AWSPinpoint/**/*.h'
+        awspinpoint.source_files = 'Pods/Target Support Files/AWSPinpoint/**/*'
+
    end
 end
